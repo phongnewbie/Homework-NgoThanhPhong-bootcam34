@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+  .header1{
+    margin: 20px;
+  }
+</style>
+<body>
+  <div class="  bg-danger w-50 text-center mx-auto">
+    <div class="card-body text-center justify-content-center">
+    <header class="font-weight-bolder fs-3">Tinh tien luong cua nhan vien</header>
+      <h1>Số ngày bạn đi làm</h1>
+      <input type="text" id="dayTowork" class="form-control">
+      &nbsp;
+      <div class="card-footer">
+      <button id="btnTinhluong" onclick="calcSalaries()">Tính lương</button>
+      <div class="mt-2" id="thongBaoTinhLuong">
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <div class="bg-warning  w-100 text-center">
+    <div class="header">
+    <header class="text-center font-weight-bolder">Tính trung bình cộng 5 số nguyên</header>
+    <span>Số thứ nhất:<input type="text" id="header1" class="header1"></span>
+    <br>
+    <span>Số thứ hai:<input type="text"id="header2" class="header1"></span>
+    <br>
+    <span>Số thứ ba:<input type="text" id="header3" class="header1"></span>
+    <br>
+    <span>Số thứ tư<input type="text" id="header4" class="header1"></span>
+    <br>
+    <span>Số thứ năm<input type="text" id="header5" class="header1"></span>
+    <br>
+    <button id="btn-Result" onclick="totalInteger()">Kết quả là:</button>
+    </div>
+    <div id="result-Integer">
+
+    </div>
+  </div>
+  <br>
+  <div class="bg-info text-center">
+    <header class="text-center font-weight-bolder">Doi tien USD sang VND</header>
+    <span>Số tiền USD bạn muốn đổi sang VND: <input type="number" id="amounttoChange"></span>
+    <button id="btn-changeMoney" onclick="changeMoney()">Đổi tiền</button>
+    <div id="moneyChange" class="bg-light font-weight-bolder">
+
+    </div>
+  </div>
+  <br>
+  <div class="badge-danger text-center d-block">
+    <header class="">Tính diện tích và chu vi</header>
+    <span>Nhập vào chiều dài<input type="text" id="inputLength"></span>
+    <br>
+    <br>
+    <span>Nhập vào chiều rộng<input type="text" id="inputWidth"></span>
+    <button id="btn-changeRectangle" onclick="areaPerimeter()" >Đổi</button>
+    <div id="areaPerimeter" class="bg-dark text-center">
+
+    </div>
+  </div>
+  <br>
+  <div class="bg-primary text-center d-block font-weight-bold">
+      <header>Tổng 2 ký số</header>
+      <span>Ký số bạn muốn nhập <input type="text" id="numBerone"></span>
+      <button id="twoNumber" onclick="totlatwoNumber()">Nhập</button>
+      <div id="resultTotalNumber">
+
+      </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
